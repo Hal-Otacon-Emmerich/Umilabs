@@ -1,0 +1,282 @@
+body {
+  font-family: 'DIN Pro';
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3, h5, p {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 165px 20px 145px 20px;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 24px 0;
+}
+
+.header strong {
+  color: #F47821;
+}
+
+.header .fill_form {
+  margin-top: 50px;
+}
+
+.header .fill_form a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header .fill_form a:before {
+  position: absolute;
+  content: '';
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: rgba(135, 135, 135, 0.05);
+  transition: width 0.3s, border-radius 0.2s;
+  top: 3px;
+}
+
+.header .fill_form a:hover:before {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.header .fill_form a .cross {
+  color: #F47821;
+  font-size: 40px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.header .fill_form a .text {
+  color: #222222;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.advantages{
+  /* background-image: url(../img/image.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100%; */
+  background-color: #F7F5FA;
+}
+
+.advantages .advantages_quotes{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 15% 100px 15%;
+  margin-top: -150px;
+}
+
+.advantages .advantages_quotes .quote{
+  min-width: 35%;
+  border: 1px solid #EDEDED;
+  background-color: #fff;
+  padding: 50px 90px 60px 60px;
+}
+
+.advantages .advantages_quotes .quote h3{
+  color: #F47821;
+  font-size: 12px;
+}
+
+.advantages .advantages_quotes .quote p{
+  color: #222222;
+  font-size: 24px;
+  max-width: 340px;
+}
+
+.we_similar{
+  padding: 80px 25% 100px 25%;
+}
+
+.we_similar h3{
+  font-size: 48px;
+  color: #222222;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.we_similar p{
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #4E4D53;
+}
+
+.our_advantages{
+  padding: 120px 130px 160px 130px;
+  background-color: #F7F5FA;
+}
+
+.our_advantages h3{
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.our_advantages__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.our_advantages__list .advantage{
+  padding: 20px 30px;
+}
+
+.our_advantages__list .advantage h5{
+  font-size: 20px;
+  color: #000;
+  padding: 30px 0 15px 0;
+}
+
+.our_advantages__list .advantage hr{
+  color: #F47821;
+  width: 24px;
+  margin: 15px 0;
+}
+
+.our_advantages__list .advantage p{
+  font-size: 16px;
+  color: #4E4D53;
+  width: 330px;
+}
+
+.form {
+  background-color: #161616;
+  padding: 100px 20px 120px 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.form h3{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.form form .input-wrap {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 25px;
+}
+
+.form form .input_header{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+.form form .input_header .num {
+  border: 1px solid #FFF3;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #F47821;
+  padding: 20px 28px;
+}
+
+.form form .input_header .input_name {
+  padding: 0px 30px;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.form form .input_header .input_name span{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.form form .input_header .input_name input{
+  border: none;
+  background-color: unset;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 24px;
+  font-weight: 300;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(247, 248, 250, 0.1);
+  transition: border-bottom 0.3s;
+}
+
+.form form .input_header .input_name input.error {
+  border-bottom: 1px solid #F42121;
+}
+
+.form form .input_header .input_name input:focus {
+  outline: none;
+  border-bottom: 1px solid #F47821;
+}
+
+.form form .input_header .input_name textarea{
+  font-family: 'DIN Pro';
+  border: none;
+  background-color: unset;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 24px;
+  font-weight: 300;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(247, 248, 250, 0.1);
+  transition: border-bottom 0.3s;
+}
+
+.form form .input_header .input_name textarea.error{
+  border-bottom: 1px solid #F42121;
+}
+
+.form form .input_header .input_name textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #F47821;
+}
+
+.form form button {
+  border: none;
+  border-radius: 110px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #F47821;
+  font-size: 14px;
+  padding: 15px 0;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: #fff;
+  transition: background-color, 0.3s;
+}
+
+.form form button:hover{
+  background-color: #DADADA;
+}
+
+.form form button:active{
+  background-color: #545454;
+  color: #fff;
+}
+
+#status{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 0;
+}
